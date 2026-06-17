@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WildLens — Nature & Wildlife Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">WILD<span class="logo-accent">LENS</span></div>
+      <nav class="filter-nav">
+        <button class="js-filter filter-btn is-active" data-filter="all">All</button>
+        <button class="js-filter filter-btn" data-filter="forest">Forest</button>
+        <button class="js-filter filter-btn" data-filter="ocean">Ocean</button>
+        <button class="js-filter filter-btn" data-filter="wildlife">Wildlife</button>
+        <button class="js-filter filter-btn" data-filter="sky">Sky</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p class="hero__eyebrow">Photography Portfolio</p>
+      <h1 class="hero__title">Where <span class="hero__neon">Nature</span> Speaks</h1>
+      <p class="hero__sub">A curated collection of raw, untamed beauty.</p>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery-grid" id="js-gallery">
+
+        <div class="gallery-item" data-category="forest">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600&q=80" alt="Sunlight filtering through dense forest trees" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Forest</span>
+              <h3 class="overlay-title">Golden Canopy</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=90" data-title="Golden Canopy" data-cat="Forest">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-item--wide" data-category="wildlife">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=80" alt="Fox sitting in snow looking at camera" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Wildlife</span>
+              <h3 class="overlay-title">Winter Fox</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=1200&q=90" data-title="Winter Fox" data-cat="Wildlife">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ocean">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=600&q=80" alt="Underwater ocean with coral reef and fish" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Ocean</span>
+              <h3 class="overlay-title">Reef World</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200&q=90" data-title="Reef World" data-cat="Ocean">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="sky">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Stunning northern lights aurora over mountain lake" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Sky</span>
+              <h3 class="overlay-title">Aurora Night</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200&q=90" data-title="Aurora Night" data-cat="Sky">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="wildlife">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=600&q=80" alt="Majestic lion resting on rock in golden hour" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Wildlife</span>
+              <h3 class="overlay-title">King's Rest</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=1200&q=90" data-title="King's Rest" data-cat="Wildlife">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item gallery-item--tall" data-category="forest">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=600&q=80" alt="Tall redwood trees with misty fog forest" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Forest</span>
+              <h3 class="overlay-title">Misty Giants</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=1200&q=90" data-title="Misty Giants" data-cat="Forest">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="ocean">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&q=80" alt="Ocean waves crashing on rocky shore at sunset" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Ocean</span>
+              <h3 class="overlay-title">Crashing Tides</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=90" data-title="Crashing Tides" data-cat="Ocean">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="sky">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Mountain peak above clouds at sunrise golden sky" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Sky</span>
+              <h3 class="overlay-title">Above The Clouds</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=90" data-title="Above The Clouds" data-cat="Sky">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="wildlife">
+          <div class="gallery-img-wrap">
+            <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=600&q=80" alt="Sea turtle swimming gracefully in clear blue ocean" loading="lazy" />
+            <div class="gallery-overlay">
+              <span class="overlay-category">Wildlife</span>
+              <h3 class="overlay-title">Ancient Drifter</h3>
+              <button class="js-lightbox-open overlay-btn" data-src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200&q=90" data-title="Ancient Drifter" data-cat="Wildlife">View</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="gallery-count">
+        <span class="js-count">Showing <strong>9</strong> photos</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="js-lightbox lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="js-lightbox-close lightbox__close" aria-label="Close">✕</button>
+    <button class="js-lightbox-prev lightbox__nav lightbox__nav--prev" aria-label="Previous">‹</button>
+    <button class="js-lightbox-next lightbox__nav lightbox__nav--next" aria-label="Next">›</button>
+    <div class="lightbox__inner">
+      <img class="js-lightbox-img lightbox__img" src="" alt="" />
+      <div class="lightbox__caption">
+        <span class="js-lightbox-cat lightbox__cat"></span>
+        <span class="js-lightbox-title lightbox__title"></span>
+      </div>
+    </div>
+  </div>
+  <div class="js-lightbox-backdrop lightbox__backdrop"></div>
+
+  <footer class="site-footer">
+    <p>© 2026 WildLens. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
